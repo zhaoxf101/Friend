@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/T_TEMPLET/Master/NestedSite.Master" AutoEventWireup="true" CodeBehind="TPortal.Master.cs" Inherits="TIM.T_TEMPLET.Master.TPortal" %>
+<asp:Content ID="TContentHead" ContentPlaceHolderID="NestedHead" runat="server">
+    <style type="text/css">
+        body { padding: 5px; overflow-x:hidden;}
+    </style>
+     <asp:ContentPlaceHolder runat="server" ID="CPHHead">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="TContentBody" ContentPlaceHolderID="NestedBody" runat="server">
+    <div style="width:100%;" id="portalMain">
+    </div>
+     <asp:ContentPlaceHolder ID="CPHContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="TContentTemplet" ContentPlaceHolderID="NestedTemplet" runat="server">
+    <asp:UpdatePanel ID="UpTemplet" runat="Server" UpdateMode="Conditional" ChildrenAsTriggers="false" RenderMode="Block">
+        <ContentTemplate>
+            <asp:ContentPlaceHolder runat="server" ID="CPHTemplet">
+            </asp:ContentPlaceHolder>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+</asp:Content>
+<asp:Content ID="TContentSync" ContentPlaceHolderID="NestedSync" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="CPHSync">
+    </asp:ContentPlaceHolder>
+</asp:Content>

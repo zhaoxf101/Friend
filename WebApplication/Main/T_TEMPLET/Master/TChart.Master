@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/T_TEMPLET/Master/Maintenance.Master" AutoEventWireup="true" CodeBehind="TChart.Master.cs" Inherits="TIM.T_TEMPLET.Master.TChart" %>
+
+<asp:Content ID="TContentHead" ContentPlaceHolderID="NestedHead" runat="server">
+  <asp:ContentPlaceHolder runat="server" ID="CPHHead">
+  </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="TContentBody" ContentPlaceHolderID="NestedBody" runat="server">
+  <asp:ScriptManagerProxy runat="server">
+    <Scripts>
+      <asp:ScriptReference Path="~/Scripts/highcharts/highcharts-all.js" />
+    </Scripts>
+  </asp:ScriptManagerProxy>
+  <asp:UpdatePanel ID="UpQuery" runat="Server" UpdateMode="Conditional" ChildrenAsTriggers="false" RenderMode="Block">
+    <ContentTemplate>
+      <div>
+        <b class="b1"></b><b class="b2 d1"></b><b class="b3 d1"></b><b class="b4 d1"></b>
+        <div class="b d1">
+          <asp:ContentPlaceHolder ID="CPHQuery" runat="server">
+          </asp:ContentPlaceHolder>
+        </div>
+        <b class="b4b d1"></b><b class="b3b d1"></b><b class="b2b d1"></b><b class="b1b"></b>
+      </div>
+    </ContentTemplate>
+  </asp:UpdatePanel>
+  <div class="MasterMenu">
+    <asp:UpdatePanel ID="UpMenu" runat="Server" UpdateMode="Conditional" ChildrenAsTriggers="false" RenderMode="Block">
+      <ContentTemplate>
+        <table>
+          <tr>
+            <td>
+              <Tim:TimButtonMenu ID="btnQuery" runat="server" ButtonType="Button" Text="查询" OnClick="btnQuery_Click" />
+            </td>
+            <td>
+              <Tim:TimButtonMenu ID="btnPrint" runat="server" Visible="false" Text="打印" ButtonType="DropDown" OnClick="btnPrint_Click" OnMenuItemClick="btnPrint_MenuItemClick" />
+            </td>
+            <td>
+              <Tim:TimButtonMenu ID="btnPreview" runat="server" Visible="false" Text="预览" ButtonType="DropDown" OnClick="btnPreview_Click" OnMenuItemClick="btnPreview_MenuItemClick" />
+            </td>
+            <td>
+              <asp:ContentPlaceHolder ID="CPHButton" runat="server">
+              </asp:ContentPlaceHolder>
+            </td>
+          </tr>
+        </table>
+      </ContentTemplate>
+    </asp:UpdatePanel>
+  </div>
+  <div id="chart_container" style="height: 100%; width: 100%;">
+  </div>
+  <asp:UpdatePanel ID="UpChart" runat="Server" UpdateMode="Conditional" ChildrenAsTriggers="false" RenderMode="Block">
+    <ContentTemplate>
+    </ContentTemplate>
+  </asp:UpdatePanel>
+  <asp:UpdatePanel ID="UpContent" runat="Server" UpdateMode="Conditional" ChildrenAsTriggers="false" RenderMode="Block">
+    <ContentTemplate>
+      <asp:ContentPlaceHolder ID="CPHContent" runat="server">
+      </asp:ContentPlaceHolder>
+    </ContentTemplate>
+  </asp:UpdatePanel>
+  <script type="text/javascript">
+    function ChartAdjust() {
+      $(function () {
+        $("#chart_container").height($(window).height() - $("#chart_container").offset().top);
+        DrawSelfChart();
+      });
+    }
+    $(window).resize(function () {
+      $("#chart_container").height($(window).height() - $("#chart_container").offset().top);
+    });
+  </script>
+</asp:Content>
+
+<asp:Content ID="TContentTemplet" ContentPlaceHolderID="NestedTemplet" runat="server">
+  <asp:UpdatePanel ID="UpTemplet" runat="Server" UpdateMode="Conditional" ChildrenAsTriggers="false" RenderMode="Block">
+    <ContentTemplate>
+      <asp:ContentPlaceHolder runat="server" ID="CPHTemplet">
+      </asp:ContentPlaceHolder>
+    </ContentTemplate>
+  </asp:UpdatePanel>
+</asp:Content>
+<asp:Content ID="TContentSync" ContentPlaceHolderID="NestedSync" runat="server">
+  <asp:ContentPlaceHolder runat="server" ID="CPHSync">
+  </asp:ContentPlaceHolder>
+</asp:Content>

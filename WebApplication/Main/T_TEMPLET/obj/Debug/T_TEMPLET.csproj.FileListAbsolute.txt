@@ -1,0 +1,9 @@
+F:\Friends\WebApplication\Main\T_TEMPLET\obj\Debug\T_TEMPLET.csprojResolveAssemblyReference.cache
+F:\Friends\WebApplication\TM_YF\TIMERP-SDSC\bin\T_TEMPLET.dll.config
+F:\Friends\WebApplication\TM_YF\TIMERP-SDSC\bin\T_TEMPLET.dll
+F:\Friends\WebApplication\TM_YF\TIMERP-SDSC\bin\T_TEMPLET.pdb
+F:\Friends\WebApplication\Main\T_TEMPLET\obj\Debug\T_TEMPLET.dll
+F:\Friends\WebApplication\Main\T_TEMPLET\obj\Debug\T_TEMPLET.pdb
+F:\Friends\WebApplication\Main\bin\T_TEMPLET.dll.config
+F:\Friends\WebApplication\Main\bin\T_TEMPLET.dll
+F:\Friends\WebApplication\Main\bin\T_TEMPLET.pdb

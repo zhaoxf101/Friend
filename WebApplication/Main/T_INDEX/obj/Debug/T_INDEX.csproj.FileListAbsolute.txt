@@ -1,0 +1,6 @@
+F:\Friends\WebApplication\Main\bin\T_INDEX.dll.config
+F:\Friends\WebApplication\Main\bin\T_INDEX.dll
+F:\Friends\WebApplication\Main\bin\T_INDEX.pdb
+F:\Friends\WebApplication\Main\T_INDEX\obj\Debug\T_INDEX.csprojResolveAssemblyReference.cache
+F:\Friends\WebApplication\Main\T_INDEX\obj\Debug\T_INDEX.dll
+F:\Friends\WebApplication\Main\T_INDEX\obj\Debug\T_INDEX.pdb

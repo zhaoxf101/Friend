@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/T_TEMPLET/Master/Maintenance.Master" AutoEventWireup="true" CodeBehind="TEditing.Master.cs" Inherits="TIM.T_TEMPLET.Master.TEditing" %>
+
+<asp:Content ID="TContentHead" ContentPlaceHolderID="NestedHead" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="CPHHead">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="TContentBody" ContentPlaceHolderID="NestedBody" runat="server">
+    <div class="MasterMenu">
+        <asp:UpdatePanel ID="UpMenu" runat="Server" UpdateMode="Conditional" ChildrenAsTriggers="false" RenderMode="Block">
+            <ContentTemplate>
+                <table>
+                    <tr>
+                        <td>
+                            <Tim:TimButtonMenu ID="btnInsert" Text="新建" runat="server" OnClick="btnInsert_Click" Width="40" />
+                        </td>
+                        <td>
+                            <Tim:TimButtonMenu ID="btnCopy" Text="复制" runat="server" OnClick="btnCopy_Click" Width="40" />
+                        </td>
+                        <td>
+                            <Tim:TimButtonMenu ID="btnEdit" Text="编辑" runat="server" OnClick="btnEdit_Click" Width="40" />
+                        </td>
+                        <td>
+                            <Tim:TimButtonMenu ID="btnSave" Text="保存" runat="server" OnClick="btnSave_Click" Width="40" />
+                        </td>
+                        <td>
+                            <Tim:TimButtonMenu ID="btnCancel" Text="取消" runat="server" OnClick="btnCancel_Click" Width="40" />
+                        </td>
+                        <td>
+                            <Tim:TimButtonMenu ID="btnDelete" Text="删除" runat="server" OnClick="btnDelete_Click" Width="40" />
+                        </td>
+                        <td>
+                            <Tim:TimButtonMenu ID="btnPrint" runat="server" Text="打印" OnClick="btnPrint_Click" OnMenuItemClick="btnPrint_MenuItemClick" Width="50" />
+                        </td>
+                        <td>
+                            <Tim:TimButtonMenu ID="btnPreview" runat="server" Text="预览" OnClick="btnPreview_Click" OnMenuItemClick="btnPreview_MenuItemClick" Width="50" />
+                        </td>
+                        <td>
+                            <Tim:TimButtonMenu ID="btnReportStyle" runat="server" Text="样式" OnClick="btnReportStyle_Click" Width="50" />
+                        </td>
+                        <td>
+                            <Tim:TimButtonMenu ID="btnAttach" runat="server" Text="附件" Width="40px" OnClick="btnAttach_Click" />
+                        </td>
+                        <td>
+                            <asp:ContentPlaceHolder ID="CPHButton" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                        <td>
+                            <Tim:TimButtonMenu ID="btnWorkflow" runat="server" Text="提交" Width="70px"
+                                OnClick="btnWorkflow_Click" OnMenuItemClick="btnWorkflow_MenuItemClick">
+                                <Items>
+                                    <Tim:TimMenuItem Text="提交" Value="0" />
+                                    <Tim:TimMenuItem Text="退回" Value="1" />
+                                    <Tim:TimMenuItem Text="撤回" Value="2" />
+                                    <Tim:TimMenuItem Text="转交" Value="3" />
+                                    <Tim:TimMenuItem Text="否决" Value="4" />
+                                    <Tim:TimMenuItem Text="流程跟踪" Value="5" />
+                                </Items>
+                            </Tim:TimButtonMenu>
+                        </td>
+                    </tr>
+                </table>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+    </div>
+    <asp:UpdatePanel ID="UpContent" runat="Server" UpdateMode="Conditional" ChildrenAsTriggers="false" RenderMode="Block">
+        <ContentTemplate>
+            <style>
+                table {
+                    border-spacing: 10px;
+                }
+            </style>
+            <%--<div>
+                <b class="b1"></b><b class="b2 d1"></b><b class="b3 d1"></b><b class="b4 d1"></b>
+                <div class="b d1">--%>
+            <div id="CPHContentDiv">
+                <asp:ContentPlaceHolder ID="CPHContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <%--</div>
+                <b class="b4b d1"></b><b class="b3b d1"></b><b class="b2b d1"></b><b class="b1b"></b>
+            </div>--%>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+</asp:Content>
+
+<asp:Content ID="TContentTemplet" ContentPlaceHolderID="NestedTemplet" runat="server">
+    <asp:UpdatePanel ID="UpTemplet" runat="Server" UpdateMode="Conditional" ChildrenAsTriggers="false" RenderMode="Block">
+        <ContentTemplate>
+            <asp:ContentPlaceHolder runat="server" ID="CPHTemplet">
+            </asp:ContentPlaceHolder>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+</asp:Content>
+<asp:Content ID="TContentSync" ContentPlaceHolderID="NestedSync" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="CPHSync">
+    </asp:ContentPlaceHolder>
+</asp:Content>

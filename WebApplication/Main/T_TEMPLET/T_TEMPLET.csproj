@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{9333E2CB-C2C5-4C68-8C7F-03736F43888C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>T_TEMPLET</AssemblyName>
+    <UseIISExpress>true</UseIISExpress>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>..\bin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="T_WEBCTRL">
+      <HintPath>..\bin\T_WEBCTRL.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="T_WORKFLOW">
+      <HintPath>..\bin\T_WORKFLOW.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\bin\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="T_ZIPLIB">
+      <HintPath>..\bin\T_ZIPLIB.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="Oracle.DataAccess">
+      <HintPath>..\bin\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="T_CHART">
+      <HintPath>..\bin\T_CHART.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DelphiDes.cs" />
+    <Compile Include="Master\Maintenance.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\NestedSite.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Site.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TBillXGrid.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TChart.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TChartList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TChartPanel.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TCodeHelper.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TEditing.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TGridPanel.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TListing.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TMasterBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TMasterSlave.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TPortal.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TTreeChart.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\TTreeGrid.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TDesMode.cs" />
+    <Compile Include="CommForm\DelphiTempletDesUtils.cs" />
+    <Compile Include="CommForm\DocFile.cs" />
+    <Compile Include="CommForm\DocFileHandle.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommForm\ReportStyle.cs" />
+    <Compile Include="CommForm\ReportStyleInfo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommForm\ReportStyleList.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommForm\ReportStyleParse.cs" />
+    <Compile Include="CommForm\rptView.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommForm\StyleDesign.cs" />
+    <Compile Include="CommForm\StyleDesignInfo.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommForm\WfHandle.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommForm\WfHandleAction.cs" />
+    <Compile Include="CommForm\WfpTrace.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommForm\WfRunLog.cs" />
+    <Compile Include="DFS\DfsFileDownload.cs" />
+    <Compile Include="DFS\DocFileInfo.cs" />
+    <Compile Include="DFS\DocFileListView.cs" />
+    <Compile Include="DFS\DocPermission.cs" />
+    <Compile Include="DFS\FileService.cs" />
+    <Compile Include="TIM.T_TEMPLET.Enum\PageClassification.cs" />
+    <Compile Include="TIM.T_TEMPLET.Enum\PortalPanelClassification.cs" />
+    <Compile Include="TIM.T_TEMPLET.Enum\PortalPanelClassificationHelper.cs" />
+    <Compile Include="TIM.T_TEMPLET.Enum\WfpQOption.cs" />
+    <Compile Include="TIM.T_TEMPLET.Enum\WfpQOptionHelper.cs" />
+    <Compile Include="TIM.T_TEMPLET.Handler\CodeHelperHandler.cs" />
+    <Compile Include="TIM.T_TEMPLET.Handler\NamedTempFileDownload.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\Base.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\ControlType.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\EntityAttribute.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\EntityManager.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\FieldMapAttribute.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\HeightPercent.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\PageParameter.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\PageState.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\PageStateHelper.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\PortalColumn.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\PortalManager.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\PortalPanel.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\PortalRow.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\RelatedEntityAttribute.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\SystemTitlePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\TBillXGridBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\TChartBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\TChartListBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\TChartPanelBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\TCodeHelperBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\TDlHandlerBase.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\TEditingBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\TGridPanelBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\TJsonHandlerBase.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\TListingBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\TMasterSlaveBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\TPortalBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\TreeImg.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\TTreeChartBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\TTreeGridBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TIM.T_TEMPLET.Page\ViewStateManager.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\WidthPercent.cs" />
+    <Compile Include="TIM.T_TEMPLET.Page\XGridSetMap.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting.ReportDLL\ISReport.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\CellCalcType.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\ExpressionFunc.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\Expressions.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\ExpressionsVar.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\FunctionTriple.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\HtmlToText.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdAlias.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdAliasList.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdCell.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdCellBorder.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdCells.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdColumn.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdColumns.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdColumnType.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdContentNode.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdDataSet.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdDataSetField.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdDataSets.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdDataType.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdDocument.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdFieldType.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdHAlignment.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdImage.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdImageAlignment.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdImageControl.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdImages.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdImageType.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdLineStyle.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdMergeCellsStyle.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdNode.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdNodeStyle.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdPaper.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdPaperOrientation.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdRegion.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdRegionBuffer.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdRegionType.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdRow.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdRows.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdRowType.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdSetNode.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdStyle.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdTextControl.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdVAlignment.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdVariable.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RdVariables.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\ReportingException.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\Resource.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmConst.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmDataSet.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmDataSets.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmGroup.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmGroupItem.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmGroups.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmImage.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmImages.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmPointData.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmReportingMaker.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmReportingMakerScriptOutput.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmRow.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmRows.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmSetNode.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\RmVars.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\TgteResultType.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\TgteToken.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\TgteTokenKind.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\TgteVariableType.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\TgtPapers.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\Utils.cs" />
+    <Compile Include="TIM.T_TEMPLET.Reporting\UtoReport.cs" />
+    <Compile Include="TIM.T_TEMPLET.Utils\ExcelUtils.cs" />
+    <Compile Include="TIM.T_TEMPLET.Utils\PageUtils.cs" />
+    <Compile Include="TIM.T_TEMPLET\DllComponent.cs" />
+    <Compile Include="TIM.T_TEMPLET\TempletResource.cs" />
+    <Compile Include="TIM.T_TEMPLET\TempletUtils.cs" />
+    <Compile Include="TIM.T_TEMPLET\TimDbCtrlUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TIM.T_TEMPLET\Scripts.CodeHelper.js" />
+    <EmbeddedResource Include="TIM.T_TEMPLET\Scripts.PortalManager.js" />
+    <EmbeddedResource Include="TIM.T_TEMPLET\Scripts.Templet.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\T_KERNEL\T_KERNEL.csproj">
+      <Project>{18596d30-aad0-4abc-9382-8f42a91897ab}</Project>
+      <Name>T_KERNEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CommForm\DocFileHandle.aspx" />
+    <Content Include="CommForm\ReportStyleInfo.aspx" />
+    <Content Include="CommForm\ReportStyleList.aspx" />
+    <Content Include="CommForm\StyleDesignInfo.aspx" />
+    <Content Include="CommForm\WfHandle.aspx" />
+    <Content Include="CommForm\WfpTrace.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DFS\DfsFileDownload.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Handler\CodeHelperHandler.ashx" />
+    <Content Include="Handler\NamedTempFileDownload.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\Maintenance.Master" />
+    <Content Include="Master\NestedSite.Master" />
+    <Content Include="Master\Site.Master" />
+    <Content Include="Master\TBillXGrid.Master" />
+    <Content Include="Master\TChart.Master" />
+    <Content Include="Master\TChartList.Master" />
+    <Content Include="Master\TChartPanel.Master" />
+    <Content Include="Master\TCodeHelper.Master" />
+    <Content Include="Master\TEditing.Master" />
+    <Content Include="Master\TGridPanel.Master" />
+    <Content Include="Master\TListing.Master" />
+    <Content Include="Master\TMasterSlave.Master" />
+    <Content Include="Master\TPortal.Master" />
+    <Content Include="Master\TTreeChart.Master" />
+    <Content Include="Master\TTreeGrid.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6308/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

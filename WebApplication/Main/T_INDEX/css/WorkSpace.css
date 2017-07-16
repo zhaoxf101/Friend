@@ -1,0 +1,192 @@
+﻿/*
+    File:WorkSpace.css
+    author:timi
+    date:2015-7-27
+*/
+body, html {
+    height: 100%;
+    overflow: hidden;
+    scrollbar-3dlight-color: #000000;
+    scrollbar-highlight-color: #000000;
+    scrollbar-face-color: #000000;
+    scrollbar-arrow-color: #000000;
+    scrollbar-shadow-color: #000000;
+    scrollbar-darkshadow-color: #000000;
+    scrollbar-base-color: #000000;
+    scrollbar-track-color: #000000;
+}
+
+body {
+    padding: 0px;
+    margin: 0;
+    overflow: hidden;
+}
+
+.l-link {
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 10px;
+    text-decoration: underline;
+    color: #333;
+}
+
+.l-link2 {
+    text-decoration: underline;
+    color: white;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.l-layout-top {
+    background: #102A49;
+    color: White;
+}
+
+.l-layout-bottom {
+    background: #E5EDEF;
+    text-align: center;
+}
+
+#pageloading {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: white url('../../Content/ligerUI/images/loading.gif') no-repeat center;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+
+.l-link {
+    display: block;
+    line-height: 22px;
+    height: 22px;
+    padding-left: 16px;
+    border: 1px solid white;
+    margin: 4px;
+}
+
+.l-link-over {
+    background: #FFEEAC;
+    border: 1px solid #DB9F00;
+}
+
+.l-winbar {
+    background: #2B5A76;
+    height: 30px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: 99999;
+}
+
+.space {
+    color: #E7E7E7;
+}
+
+.l-topmenu {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 100%;
+    background-image: url(../images/TOP.jpg);
+    background-size: cover;
+    -ms-behavior: url(../images/backgroundsize.min.htc);
+}
+
+.l-topmenu-logo {
+    color: #E7E7E7;
+    padding-left: 35px;
+    line-height: 60px;
+}
+
+.l-topmenu-welcome {
+    position: absolute;
+    height: 24px;
+    line-height: 50px;
+    right: 30px;
+    top: 2px;
+    color: #070A0C;
+}
+
+    .l-topmenu-welcome a {
+        color: #E7E7E7;
+        text-decoration: underline;
+    }
+
+.Top {
+    width: 100%;
+    height: 78px;
+    background: url(../images/top_bg.jpg) no-repeat left bottom;
+    background-size: cover;
+    line-height: 78px;
+}
+
+    .Top .ConpanyName {
+        width: 65%;
+        float: left;
+        height: 78px;
+        color: #ffffff;
+        font-size: 26px;
+        padding-left: 48px;
+    }
+
+    .Top .loginbar {
+        float: right;
+        color: #ffffff;
+    }
+
+    .Top span {
+        color: #ffffff;
+        font-size: 16px;
+        margin: 0 32px;
+    }
+
+        .Top span img {
+            margin-right: 11px;
+        }
+
+    .Top .loginbar a {
+        margin: 0 32px;
+        color: #ffffff;
+        font-size: 14px;
+    }
+
+
+/*滚动条样式*/
+::-webkit-scrollbar-track-piece {
+    -webkit-border-radius: 0;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    /*height: 50px;*/
+    background-color: #03314B;
+    -webkit-border-radius: 4px;
+    outline-offset: -2px;
+    border: 1px solid #031230;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        /*height: 50px;*/
+        background-color: #03314B;
+        -webkit-border-radius: 2px;
+    }
+
+
+* {
+    scrollbar-3dlight-color: #D4D0C8;
+    scrollbar-highlight-color: #fff;
+    scrollbar-face-color: #E4E4E4;
+    scrollbar-arrow-color: #666;
+    scrollbar-shadow-color: #808080;
+    scrollbar-darkshadow-color: #03314B;
+    scrollbar-base-color: #D7DCE0;
+    scrollbar-track-color: #03314B;
+}

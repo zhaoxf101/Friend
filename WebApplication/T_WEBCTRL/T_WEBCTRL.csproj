@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{2D017082-5573-489E-95F0-D127BD0A0CB8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>T_WEBCTRL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>..\Main\bin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Main\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ANPCategoryAttribute.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ANPDefaultValueAttribute.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ANPDescriptionAttribute.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ApplicationStateStatusManager.cs" />
+    <Compile Include="TIM.T_WEBCTRL\AspNetPagerIDConverter.cs" />
+    <Compile Include="TIM.T_WEBCTRL\BoundFieldMode.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ButtonMenuType.cs" />
+    <Compile Include="TIM.T_WEBCTRL\CKEditorConfig.cs" />
+    <Compile Include="TIM.T_WEBCTRL\CKSerializable.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ConfigurationHashThread.cs" />
+    <Compile Include="TIM.T_WEBCTRL\contentsLangDirections.cs" />
+    <Compile Include="TIM.T_WEBCTRL\DialogButtonsOrder.cs" />
+    <Compile Include="TIM.T_WEBCTRL\DllComponent.cs" />
+    <Compile Include="TIM.T_WEBCTRL\DragDropEventHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\EnterMode.cs" />
+    <Compile Include="TIM.T_WEBCTRL\FileUploadStreamProvider.cs" />
+    <Compile Include="TIM.T_WEBCTRL\FilterStream.cs" />
+    <Compile Include="TIM.T_WEBCTRL\FixRowColumn.cs" />
+    <Compile Include="TIM.T_WEBCTRL\HttpUploadModule.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ICriteriaGenerator.cs" />
+    <Compile Include="TIM.T_WEBCTRL\IFileNameGenerator.cs" />
+    <Compile Include="TIM.T_WEBCTRL\IMimePushHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\IStatusManager.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ITIMWebControl.cs" />
+    <Compile Include="TIM.T_WEBCTRL\IUploadFileFilter.cs" />
+    <Compile Include="TIM.T_WEBCTRL\IUploadLengthFilter.cs" />
+    <Compile Include="TIM.T_WEBCTRL\IUploadRequestFilter.cs" />
+    <Compile Include="TIM.T_WEBCTRL\IUploadStreamProvider.cs" />
+    <Compile Include="TIM.T_WEBCTRL\JSONSerializer.cs" />
+    <Compile Include="TIM.T_WEBCTRL\LayoutType.cs" />
+    <Compile Include="TIM.T_WEBCTRL\MenuItemsConverter.cs" />
+    <Compile Include="TIM.T_WEBCTRL\MimeHeaderReader.cs" />
+    <Compile Include="TIM.T_WEBCTRL\MimePushReader.cs" />
+    <Compile Include="TIM.T_WEBCTRL\MimeUploadHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\NameValueConfigurationSection.cs" />
+    <Compile Include="TIM.T_WEBCTRL\NameValueConfigurationSectionHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\NavigationButtonPosition.cs" />
+    <Compile Include="TIM.T_WEBCTRL\PageChangingEventArgs.cs" />
+    <Compile Include="TIM.T_WEBCTRL\PageChangingEventHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\PageIndexBoxType.cs" />
+    <Compile Include="TIM.T_WEBCTRL\PagingButtonLayoutType.cs" />
+    <Compile Include="TIM.T_WEBCTRL\PagingButtonPosition.cs" />
+    <Compile Include="TIM.T_WEBCTRL\PagingButtonType.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ParseContentDisposition.cs" />
+    <Compile Include="TIM.T_WEBCTRL\RequestRecorderModule.cs" />
+    <Compile Include="TIM.T_WEBCTRL\RequestStream.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ResizeDir.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ScaytContextCommands.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ScaytContextMenuItemsOrder.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ScaytMoreSuggestions.cs" />
+    <Compile Include="TIM.T_WEBCTRL\SelectedNodeChangedEventHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ShowCustomInfoSection.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ShowPageIndexBox.cs" />
+    <Compile Include="TIM.T_WEBCTRL\SqlClientInputStream.cs" />
+    <Compile Include="TIM.T_WEBCTRL\SqlClientOutputStream.cs" />
+    <Compile Include="TIM.T_WEBCTRL\SqlClientStatusManager.cs" />
+    <Compile Include="TIM.T_WEBCTRL\SqlClientUploadStreamProvider.cs" />
+    <Compile Include="TIM.T_WEBCTRL\SR.cs" />
+    <Compile Include="TIM.T_WEBCTRL\StartupMode.cs" />
+    <Compile Include="TIM.T_WEBCTRL\StatusManagerConfigurationSection.cs" />
+    <Compile Include="TIM.T_WEBCTRL\StatusManagerConfigurationSectionHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\StatusManagerType.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimBoundField.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimButton.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimButtonMenu.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimButtonMenuDesigner.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimCalendar.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimCharCase.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimCheckBox.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimCheckBoxList.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimCheckedBoxList.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimCKEditor.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimCKEditorDesigner.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TIMContentPlaceHolder.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimCtrlEndSymbol.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimCtrlUtils.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimDataList.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimDate.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimDateTime.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimDropDownList.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimDropMode.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimFileUpload.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimGridView.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimHiddenField.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimImageButton.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimLabel.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimListBox.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimListItem.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimLiteral.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimMenuItem.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimMenuItemCollection.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimNodeTagType.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimNumericTextBox.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimNumericUpDown.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimPagingBar.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimPagingBarDesigner.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimPanel.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimTextBox.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimTreeView.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimTreeViewDesigner.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimTreeViewDragEventArgs.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimTreeViewDropMode.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimTreeViewEventDatas.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimTreeViewImageSet.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimTreeViewMenuClickEventArgs.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimTreeViewNode.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimTreeViewNodeCollection.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimTreeViewNodeEventArgs.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimTreeViewNodeTypes.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimTreeViewPostType.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimUploadHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimUploadProgressBar.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TIMWebControl.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimXBoundField.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimXCheckBoxField.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimXDateField.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimXDateTimeField.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimXDropDownListField.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimXGrid.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimXGridActionHeaderTemplate.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimXGridActionItemTemplate.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimXNumericTextBoxField.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimXNumericUpDownField.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TimXTextBoxField.cs" />
+    <Compile Include="TIM.T_WEBCTRL\ToolbarLocation.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TreeLoadEventHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TreeNodeCheckChangedEventHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TreeNodeDblClickEventHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TreeNodeExpandedEventHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TreeNodeMenuClickEventHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\TreeNodePopulateEventHandler.cs" />
+    <Compile Include="TIM.T_WEBCTRL\UploadedFile.cs" />
+    <Compile Include="TIM.T_WEBCTRL\UploadException.cs" />
+    <Compile Include="TIM.T_WEBCTRL\UploadLog.cs" />
+    <Compile Include="TIM.T_WEBCTRL\UploadState.cs" />
+    <Compile Include="TIM.T_WEBCTRL\UploadStatus.cs" />
+    <Compile Include="TIM.T_WEBCTRL\UploadStreamProviderType.cs" />
+    <Compile Include="TIM.T_WEBCTRL\UploadTerminationReason.cs" />
+    <Compile Include="TIM.T_WEBCTRL\UtoColumnMenuClickEventArgs.cs" />
+    <Compile Include="TIM.T_WEBCTRL\UtoRowDoubleClickEventArgs.cs" />
+    <Compile Include="TIM.T_WEBCTRL\UtoUploadConfiguration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="TIM.T_WEBCTRL\TimGridView.TimGridView.js" />
+    <EmbeddedResource Include="TIM.T_WEBCTRL\TimNumericUpDown.TimNumericUpDown.ico" />
+    <EmbeddedResource Include="TIM.T_WEBCTRL\TimPagingBar.TimPagingBar.js" />
+    <EmbeddedResource Include="TIM.T_WEBCTRL\TimPagingBar.TimPagingBar.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\T_KERNEL\T_KERNEL.csproj">
+      <Project>{18596d30-aad0-4abc-9382-8f42a91897ab}</Project>
+      <Name>T_KERNEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

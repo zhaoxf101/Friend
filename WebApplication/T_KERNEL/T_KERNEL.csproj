@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{18596D30-AAD0-4ABC-9382-8F42A91897AB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>T_KERNEL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <OutputPath>..\Main\bin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System" />
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\ReferencedAssemblies\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\ReferencedAssemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="Oracle.DataAccess">
+      <HintPath>..\ReferencedAssemblies\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="T_HSQL">
+      <HintPath>..\ReferencedAssemblies\T_HSQL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PasswordHash\PasswordHash.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TIM.T_KERNEL.Caching\CacheFactory.cs" />
+    <Compile Include="TIM.T_KERNEL.Caching\DbTableCacheBase.cs" />
+    <Compile Include="TIM.T_KERNEL.Caching\DbTableCacheEvent.cs" />
+    <Compile Include="TIM.T_KERNEL.Caching\DbTableCacheManager.cs" />
+    <Compile Include="TIM.T_KERNEL.Caching\ICacheManager.cs" />
+    <Compile Include="TIM.T_KERNEL.Caching\TableDependency.cs" />
+    <Compile Include="TIM.T_KERNEL.Caching\UCacheTimeManager.cs" />
+    <Compile Include="TIM.T_KERNEL.ChnSpell\ChnSpellConvert.cs" />
+    <Compile Include="TIM.T_KERNEL.Common\NameValueString.cs" />
+    <Compile Include="TIM.T_KERNEL.Common\PageState.cs" />
+    <Compile Include="TIM.T_KERNEL.Common\RunDirectory.cs" />
+    <Compile Include="TIM.T_KERNEL.Common\UtoBase64.cs" />
+    <Compile Include="TIM.T_KERNEL.Compute\ComputeEngine.cs" />
+    <Compile Include="TIM.T_KERNEL.Compute\ComputeEngineInnerFunc.cs" />
+    <Compile Include="TIM.T_KERNEL.Compute\ComputeEngineParamException.cs" />
+    <Compile Include="TIM.T_KERNEL.Compute\ComputeEngineParserException.cs" />
+    <Compile Include="TIM.T_KERNEL.Compute\ComputeEngineTokenType.cs" />
+    <Compile Include="TIM.T_KERNEL.DataTemplet\DataModuleUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DataTemplet\IDataModule.cs" />
+    <Compile Include="TIM.T_KERNEL.Data\Database.cs" />
+    <Compile Include="TIM.T_KERNEL.Data\DbConfig.cs" />
+    <Compile Include="TIM.T_KERNEL.Data\DbProviderType.cs" />
+    <Compile Include="TIM.T_KERNEL.Data\HSQL.cs" />
+    <Compile Include="TIM.T_KERNEL.Data\HSQLParameter.cs" />
+    <Compile Include="TIM.T_KERNEL.Data\HSQLParameters.cs" />
+    <Compile Include="TIM.T_KERNEL.Data\OdacDatabase.cs" />
+    <Compile Include="TIM.T_KERNEL.Data\OracleDatabase.cs" />
+    <Compile Include="TIM.T_KERNEL.Data\SqlDatabase.cs" />
+    <Compile Include="TIM.T_KERNEL.Data\TimDbType.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\Auth.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\AuthCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\AuthUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\CodeHelper.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\CodeHelperCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\CodeHelperUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\Component.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\ComponentCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\ComponentUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DbEntity.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DbServer.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DbServerCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DbServerUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\Dept.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DeptCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DeptUser.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DeptUserCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DeptUserUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DeptUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DfsSet.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DfsSetCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DfsSetUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DllComponent.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\DllModule.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\FuncModel.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\FuncModelCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\FuncModelUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\MePage.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\MePageCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\MePageUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\Module.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\ModuleAttribute.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\ModuleCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\ModuleType.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\ModuleUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\Parameter.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\ParameterCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\ParameterControlType.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\ParameterType.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\ParameterUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\Permission.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\PermissionCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\PermissionType.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\PermissionUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\PmConfig.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\PmConfigCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\PmConfigType.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\PmConfigUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\PmRefer.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\PmReferCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\PmReferUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\Point.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\PointCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\PointUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\Role.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\RoleCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\RoleUser.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\RoleUserCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\RoleUserUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\RoleUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\SystemInfo.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\SystemInfoCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\SystemInfoUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\UgUser.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\UgUserCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\UgUserUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\User.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\UserCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\UserGroup.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\UserGroupCache.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\UserGroupUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\UserModulePermission.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\UserType.cs" />
+    <Compile Include="TIM.T_KERNEL.DbTableCache\UserUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.GSM\CodedMessage.cs" />
+    <Compile Include="TIM.T_KERNEL.GSM\DecodedMessage.cs" />
+    <Compile Include="TIM.T_KERNEL.GSM\GsmCom.cs" />
+    <Compile Include="TIM.T_KERNEL.GSM\GsmModem.cs" />
+    <Compile Include="TIM.T_KERNEL.GSM\ICom.cs" />
+    <Compile Include="TIM.T_KERNEL.GSM\PDUEncoding.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\BoolHelper.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\CharDictionary.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\CharUnit.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\CharUnitPredicate.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\ChinesePinyin.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\DataCache.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\DateTimeHelper.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\Error.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\JsonHelper.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\NumericHelper.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\Options.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\PinyinDictionary.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\PinyinUnit.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\PinyinUnitPredicate.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\QR8bitByte.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\QRBitBuffer.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\QRCode.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\QRErrorCorrectLevel.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\QRMaskPattern.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\QRMath.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\QRMode.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\QRPolynomial.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\QRRSBlock.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\QRUtil.cs" />
+    <Compile Include="TIM.T_KERNEL.Helper\StringHelper.cs" />
+    <Compile Include="TIM.T_KERNEL.Log\AppEventLog.cs" />
+    <Compile Include="TIM.T_KERNEL.Menu\TimMenu.cs" />
+    <Compile Include="TIM.T_KERNEL.Optimization\BundleConfig.cs" />
+    <Compile Include="TIM.T_KERNEL.Protocols\MimeContentType.cs" />
+    <Compile Include="TIM.T_KERNEL.Security\AES.cs" />
+    <Compile Include="TIM.T_KERNEL.Security\DES.cs" />
+    <Compile Include="TIM.T_KERNEL.Security\MD5Encrypt.cs" />
+    <Compile Include="TIM.T_KERNEL.Security\PasswordSec.cs" />
+    <Compile Include="TIM.T_KERNEL.Security\ServerHardwareInfo.cs" />
+    <Compile Include="TIM.T_KERNEL.Security\Sys.cs" />
+    <Compile Include="TIM.T_KERNEL.SystemInit\ComponentInit.cs" />
+    <Compile Include="TIM.T_KERNEL.SystemInit\ModuleInit.cs" />
+    <Compile Include="TIM.T_KERNEL.SystemInit\PermissionOpInit.cs" />
+    <Compile Include="TIM.T_KERNEL.SystemInit\SystemInit.cs" />
+    <Compile Include="TIM.T_KERNEL.SystemInit\UsersInit.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\AuthSessionUpdateTask.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\ITask.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\JobLogUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\JobScheduleTask.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\MemorySessionUpdateTask.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\TaskBase.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\TaskCycleOption.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\TaskExecResult.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\TaskInfo.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\TimerCategory.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\TimerJob.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\TimerManager.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\TimerThread.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\TTaskQueueComparer.cs" />
+    <Compile Include="TIM.T_KERNEL.TaskScheduler\UCacheUpdateTask.cs" />
+    <Compile Include="TIM.T_KERNEL.TimException\ColumnIndexException.cs" />
+    <Compile Include="TIM.T_KERNEL.TimException\RowIndexException.cs" />
+    <Compile Include="TIM.T_KERNEL.TimException\TimOdpException.cs" />
+    <Compile Include="TIM.T_KERNEL.Utils\CacheEvent.cs" />
+    <Compile Include="TIM.T_KERNEL.Utils\DbHelper.cs" />
+    <Compile Include="TIM.T_KERNEL.Utils\SmsUtils.cs" />
+    <Compile Include="TIM.T_KERNEL.Utils\TimIdUtils.cs" />
+    <Compile Include="TIM.T_KERNEL\AppBitType.cs" />
+    <Compile Include="TIM.T_KERNEL\AppConfig.cs" />
+    <Compile Include="TIM.T_KERNEL\AppDbInstance.cs" />
+    <Compile Include="TIM.T_KERNEL\AppGlobal.cs" />
+    <Compile Include="TIM.T_KERNEL\AppRuntime.cs" />
+    <Compile Include="TIM.T_KERNEL\AppUtils.cs" />
+    <Compile Include="TIM.T_KERNEL\AppVersion.cs" />
+    <Compile Include="TIM.T_KERNEL\CookieMemory.cs" />
+    <Compile Include="TIM.T_KERNEL\DllComponent.cs" />
+    <Compile Include="TIM.T_KERNEL\GlobalCulture.cs" />
+    <Compile Include="TIM.T_KERNEL\LogicContext.cs" />
+    <Compile Include="TIM.T_KERNEL\LogicSession.cs" />
+    <Compile Include="TIM.T_KERNEL\LogicSessionType.cs" />
+    <Compile Include="TIM.T_KERNEL\RuntimeModule.cs" />
+    <Compile Include="TIM.T_KERNEL\ServerMoniter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="PinyinDictionary" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/T_TEMPLET/Master/Site.Master" AutoEventWireup="true" CodeBehind="Maintenance.master.cs" Inherits="TIM.T_TEMPLET.Master.Maintenance" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteHead" runat="server">
+  <asp:ContentPlaceHolder runat="server" ID="NestedHead">
+  </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteBody" runat="server">
+  <asp:ContentPlaceHolder runat="server" ID="NestedBody">
+  </asp:ContentPlaceHolder>
+  <div style="display: none;">
+    <%-- <object classid="clsid:1B19543D-1C5D-40CE-9850-EB5115B1E9E7" width="0" height="0" id="ReportData">
+    </object>--%>
+  </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="SiteTemplet" runat="server">
+  <asp:UpdatePanel ID="UpTemplet" runat="Server" UpdateMode="Conditional" ChildrenAsTriggers="false" RenderMode="Block">
+    <ContentTemplate>
+      <Tim:TimHiddenField ID="Templet_Action" runat="server"></Tim:TimHiddenField>
+      <Tim:TimHiddenField ID="Templet_NextWfId" runat="server"></Tim:TimHiddenField>
+      <Tim:TimHiddenField ID="Templet_NextWfpId" runat="server"></Tim:TimHiddenField>
+      <Tim:TimHiddenField ID="Templet_Todo" runat="server"></Tim:TimHiddenField>
+      <Tim:TimHiddenField ID="Templet_Opinion" runat="server"></Tim:TimHiddenField>
+      <Tim:TimHiddenField ID="Templet_FileGroup" runat="server"></Tim:TimHiddenField>
+      <Tim:TimHiddenField ID="Templet_Files" runat="server"></Tim:TimHiddenField>
+      <Tim:TimHiddenField ID="Templet_FilesUploadId" runat="server"></Tim:TimHiddenField>
+      <Tim:TimHiddenField ID="Templet_CodeHelperParam" runat="server"></Tim:TimHiddenField>
+      <Tim:TimButton style="display: none;" ID="btnFlowBlock" runat="server"></Tim:TimButton>
+    </ContentTemplate>
+  </asp:UpdatePanel>
+  <asp:ContentPlaceHolder runat="server" ID="NestedTemplet">
+  </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="SiteSync" runat="server">
+  <asp:ContentPlaceHolder runat="server" ID="NestedSync">
+  </asp:ContentPlaceHolder>
+</asp:Content>

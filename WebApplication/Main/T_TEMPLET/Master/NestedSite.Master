@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/T_TEMPLET/Master/Site.Master" AutoEventWireup="true" CodeBehind="NestedSite.Master.cs" Inherits="TIM.T_TEMPLET.Master.NestedSite" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteHead" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="NestedHead">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteBody" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="NestedBody">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="SiteTemplet" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="NestedTemplet">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="SiteSync" runat="server">
+    <asp:ContentPlaceHolder runat="server" ID="NestedSync">
+    </asp:ContentPlaceHolder>
+</asp:Content>

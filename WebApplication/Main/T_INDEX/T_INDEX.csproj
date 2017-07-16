@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FEAA9035-575D-4DBE-8128-4B19CAE25C33}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>T_INDEX</RootNamespace>
+    <AssemblyName>T_INDEX</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="css\base.css" />
+    <Content Include="css\Log.css" />
+    <Content Include="css\Login.css" />
+    <Content Include="css\WorkSpace.css" />
+    <Content Include="DeskTop.aspx" />
+    <Content Include="DeskTop.css" />
+    <Content Include="ErrorHandler.aspx" />
+    <Content Include="Images\angle_bg.png" />
+    <Content Include="Images\bevel.png" />
+    <Content Include="Images\bg_bg.jpg" />
+    <Content Include="Images\bot_img.png" />
+    <Content Include="Images\BoxItem1_tt1.png" />
+    <Content Include="Images\BoxItem1_tt2.png" />
+    <Content Include="Images\BoxItem1_tt3.png" />
+    <Content Include="Images\BoxItem1_tt4.png" />
+    <Content Include="Images\btns.png" />
+    <Content Include="Images\btns2.png" />
+    <Content Include="Images\btns3.png" />
+    <Content Include="Images\cic_bg.png" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\close2.png" />
+    <Content Include="Images\Content_bg.jpg" />
+    <Content Include="Images\ct1.png" />
+    <Content Include="Images\ct10.png" />
+    <Content Include="Images\ct2.png" />
+    <Content Include="Images\ct3.png" />
+    <Content Include="Images\ct4.png" />
+    <Content Include="Images\ct7.png" />
+    <Content Include="Images\ct8.png" />
+    <Content Include="Images\ct9.png" />
+    <Content Include="Images\Current_bg.jpg" />
+    <Content Include="Images\Current_bg.png" />
+    <Content Include="Images\dzyw_tt1.png" />
+    <Content Include="Images\dzyw_tt2.png" />
+    <Content Include="Images\dzyw_tt3.png" />
+    <Content Include="Images\histogram11.png" />
+    <Content Include="Images\jt.png" />
+    <Content Include="Images\jt2.png" />
+    <Content Include="Images\jt_nav.png" />
+    <Content Include="Images\login_bg.jpg" />
+    <Content Include="Images\login_icon1.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\menuname.png" />
+    <Content Include="Images\Menu_bg.jpg" />
+    <Content Include="Images\menu_bot_img.png" />
+    <Content Include="Images\menu_icon1.png" />
+    <Content Include="Images\menu_icon2.png" />
+    <Content Include="Images\menu_icon3.png" />
+    <Content Include="Images\menu_icon4.png" />
+    <Content Include="Images\menu_icon5.png" />
+    <Content Include="Images\menu_icon6.png" />
+    <Content Include="Images\menu_icon7.png" />
+    <Content Include="Images\menu_icon8.png" />
+    <Content Include="Images\menu_icon9.png" />
+    <Content Include="Images\menu_li.png" />
+    <Content Include="Images\menu_li2.png" />
+    <Content Include="Images\menu_li3.png" />
+    <Content Include="Images\menu_li4.png" />
+    <Content Include="Images\open_a.png" />
+    <Content Include="Images\open_a2.png" />
+    <Content Include="Images\open_menu_bg.png" />
+    <Content Include="Images\per_icon.png" />
+    <Content Include="Images\point_icon1.png" />
+    <Content Include="Images\point_icon2.png" />
+    <Content Include="Images\point_icon3.png" />
+    <Content Include="Images\point_icon4.png" />
+    <Content Include="Images\SSJK_Box.png" />
+    <Content Include="Images\SSJK_Box2.png" />
+    <Content Include="Images\SSJK_Box3.png" />
+    <Content Include="Images\SSJK_tt.png" />
+    <Content Include="Images\SSJK_tt_icon1.png" />
+    <Content Include="Images\SSJK_tt_icon2.png" />
+    <Content Include="Images\SSJK_tt_icon3.png" />
+    <Content Include="Images\sx_icon.png" />
+    <Content Include="Images\tab_nav_li.png" />
+    <Content Include="Images\tip_icon1.png" />
+    <Content Include="Images\tip_icon2.png" />
+    <Content Include="Images\tip_icon3.png" />
+    <Content Include="Images\topBar_bg.jpg" />
+    <Content Include="Images\top_per.png" />
+    <Content Include="Images\turntable.png" />
+    <Content Include="Images\znjk_icon.png" />
+    <Content Include="Images\znjk_icon10.png" />
+    <Content Include="Images\znjk_icon11.png" />
+    <Content Include="Images\znjk_icon12.png" />
+    <Content Include="Images\znjk_icon2.png" />
+    <Content Include="Images\znjk_icon3.png" />
+    <Content Include="Images\znjk_icon4.png" />
+    <Content Include="Images\znjk_icon5.png" />
+    <Content Include="Images\znjk_icon6.png" />
+    <Content Include="Images\znjk_icon7.png" />
+    <Content Include="Images\znjk_icon8.png" />
+    <Content Include="Images\znjk_icon9.png" />
+    <Content Include="Images\ZNJK_li_h3.png" />
+    <Content Include="Images\ZNJK_tt_icon1.png" />
+    <Content Include="Images\ZNJK_tt_icon2.png" />
+    <Content Include="Images\ZNJK_tt_icon3.png" />
+    <Content Include="Images\两吉公司-2016-11-17.png" />
+    <Content Include="Images\未标题-1_13.png" />
+    <Content Include="include\bottom.html" />
+    <Content Include="include\top.html" />
+    <Content Include="js\base.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\DeskTop.js" />
+    <Content Include="js\html5shiv.v3.72.min.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery.treemenu.js" />
+    <Content Include="js\jquery.ztree.core.js" />
+    <Content Include="js\ttScrollBar.js" />
+    <Content Include="js\WorkSpace - 副本.js" />
+    <Content Include="js\WorkSpace.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="PassMe.aspx" />
+    <Content Include="Tips\ActiveXHtm.htm" />
+    <Content Include="Tips\Tips - 副本.aspx" />
+    <Content Include="Tips\Tips.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WorkSpace.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tips\Tips.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeskTop.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DllComponent.cs" />
+    <Compile Include="ErrorHandler.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PassMe.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\T_KERNEL\T_KERNEL.csproj">
+      <Project>{18596d30-aad0-4abc-9382-8f42a91897ab}</Project>
+      <Name>T_KERNEL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\T_TEMPLET\T_TEMPLET.csproj">
+      <Project>{9333e2cb-c2c5-4c68-8c7f-03736f43888c}</Project>
+      <Name>T_TEMPLET</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\vssver2.scc" />
+    <Content Include="Tips\vssver2.scc" />
+    <Content Include="Tips\Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferencedAssemblies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ReferencedAssemblies\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="T_WEBCTRL">
+      <HintPath>..\ReferencedAssemblies\T_WEBCTRL.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52102/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
